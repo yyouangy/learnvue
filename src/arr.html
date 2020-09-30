@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function concatjson(newJson, oldJson) {
+            newJson = newJson.filter((newItem) => {
+                return !oldJson.some((oldItem) => newItem.name === oldItem.name);
+            });
+            console.log([...newJson, ...oldJson]);
+            return [...newJson, ...oldJson];
+        }
+
+        let arr1 = [{ name: 1 },
+        { name: 'ygy' },
+        { name: 2 },
+        { name: 3 },
+        { name: 4 },
+        { name: 5 },
+        { name: 6 },
+        { name: 7 },
+        { name: 8 },
+        { name: 9 },
+        { name: 10 }];
+        let arr2 = [{ name: 1 },
+        { name: 2 },
+        { name: 3 },
+        { name: 4 },
+        { name: 5 },
+        { name: 0 }];
+        console.log(concatjson(arr1, arr2));
+    </script>
+</body>
+
+</html>

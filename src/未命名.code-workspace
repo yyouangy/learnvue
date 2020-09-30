@@ -1,0 +1,21 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../../workspace/powergp/powergirdpic"
+		},
+		{
+			"path": "../../../workspace/bigScreen/bigScreen"
+		},
+		{
+			"path": "../../canvas"
+		}
+	],
+	"settings": {
+		"workbench.colorTheme": "Dracula",
+		"workbench.view.alwaysShowHeaderActions": true
+	},
+	
+}
